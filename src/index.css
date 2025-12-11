@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@keyframes zoomSlow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.animate-zoomSlow {
+  animation: zoomSlow 8s ease-in-out infinite alternate;
+}
