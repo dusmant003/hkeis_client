@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FiSearch } from 'react-icons/fi';
 import { FaPen } from 'react-icons/fa';
 import { MdKeyboardArrowDown } from 'react-icons/md';
+import { APP } from '../../config/constatns';
 // import LoginModal from '../Modal/LoginModal';
 
 const Navbar = () => {
@@ -31,7 +32,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
           <img src="https://pragatidegreecollege.org/wp-content/uploads/2023/04/cropped-cropped-cropped-logo-300x300.jpeg" alt="logo" className="h-8 w-auto" />
-          <span className="text-2xl font-bold text-[#242cc9]">HKEIS</span>
+          <span className="text-2xl font-bold text-[#242cc9]">{APP.NAME}</span>
         </Link>
 
         {/* Desktop Menu */}

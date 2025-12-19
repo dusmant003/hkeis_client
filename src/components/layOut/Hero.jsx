@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { theme } from "../../config/theme";
 
 const slides = [
   {
@@ -80,7 +81,7 @@ export default function HeroSlider() {
 
             {/* Buttons */}
             <div className="flex gap-3 mt-6 whitespace-nowrap">
-              <button className="px-4 sm:px-6 py-3 bg-orange-500 rounded-full font-semibold">
+              <button className={`px-4 sm:px-6 py-3 ${ theme.button.primary} rounded-full font-semibold`}>
                 GET STARTED ↗
               </button>
               <button className="px-4 sm:px-6 py-3 border border-white rounded-full font-semibold">

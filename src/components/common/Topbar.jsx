@@ -1,11 +1,12 @@
 import { FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 import { MdLocationOn, MdEmail, MdCall } from 'react-icons/md';
+import { theme } from '../../config/theme';
 
 const Topbar = () => {
   return (
     <div className="hidden md:flex justify-between items-center text-white text-sm bg-[#242cc9]">
       {/* Left side: Social Media */}
-      <div className="flex items-center bg-orange-500 px-6 py-2 gap-3">
+      <div className={`flex items-center ${theme.button.primary}  px-6 py-2 gap-3`}>
         <span className="font-medium">Follow Us:</span>
         <div className="flex gap-3">
           <a

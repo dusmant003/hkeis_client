@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import AOS from "aos";
+import { theme } from "../../config/theme";
 
 export default function AboutUs() {
   useEffect(() => {
@@ -89,10 +90,10 @@ export default function AboutUs() {
 
           <button
             data-aos="zoom-in"
-            className="px-6 sm:px-8 py-3 sm:py-4
+            className={`px-6 sm:px-8 py-3 sm:py-4
             border border-gray-300 rounded-xl font-semibold
             transition-all duration-300
-            hover:bg-black hover:text-white hover:-translate-y-1"
+            ${theme.button.hoverPrimary} hover:text-white hover:-translate-y-1`}
           >
             Read More
           </button>

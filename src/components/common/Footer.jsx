@@ -8,6 +8,9 @@ import {
   FaPhoneAlt,
   FaEnvelope,
 } from 'react-icons/fa';
+import { theme } from '../../config/theme';
+import { APP } from '../../config/constatns';
+
 
 const Footer = () => {
   return (
@@ -17,7 +20,7 @@ const Footer = () => {
         {/* Logo and Description */}
         <div>
           <div className="text-3xl font-bold text-white mb-4">
-            <span className="text-orange-500">HKE</span>IS
+            <span className="text-orange-500">{APP.SHORT_NAME}</span>IS
           </div>
           <p className="text-sm text-gray-300 mb-6">
             We are many variations of passages available but the majority have suffered alteration in some form by injected humour words believable.
@@ -75,7 +78,7 @@ const Footer = () => {
             placeholder="Your Email"
             className="w-full px-4 py-2 rounded-md text-gray-900 focus:outline-none mb-4"
           />
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-2 rounded-full w-full transition-all">
+          <button className={`${theme.button.primary} hover:bg-orange-600 text-white font-bold px-6 py-2 rounded-full w-full transition-all`}>
             SUBSCRIBE NOW ✈
           </button>
         </div>
@@ -83,7 +86,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-10 py-6 px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-300">
-        <p>© Copyright 2025 <span className="text-orange-500">HKEIS</span>. All Rights Reserved.</p>
+        <p>© Copyright 2025 <span className="text-orange-500">{APP.NAME}</span>. All Rights Reserved.</p>
         <div className="flex gap-4 text-white">
           <a href="#" className="bg-orange-500 p-2 rounded-md hover:bg-orange-600"><FaFacebookF /></a>
           <a href="#" className="bg-orange-500 p-2 rounded-md hover:bg-orange-600"><FaLinkedinIn /></a>
